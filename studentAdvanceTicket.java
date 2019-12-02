@@ -14,6 +14,6 @@ public class StudentAdvanceTicket extends AdvanceTicket {
 	  }
 
 	  public String toString() {
-	    return super.toString() + " (ID Required) ";
+	    return super.toString() + "Please present Student ID at the door";
 	  }
 	}
