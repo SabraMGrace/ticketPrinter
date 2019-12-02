@@ -8,8 +8,8 @@ package ticketPrinter;
 
 public class StudentAdvanceTicket extends AdvanceTicket {
 
-	  public StudentAdvanceTicket(int number, int daysAhead) {
-	    super(number, daysAhead);
+	  public StudentAdvanceTicket(int number, int daysAdvance) {
+	    super(number, daysAdvance);
 	    super.ticketPrice = super.getPrice() / 2;
 	  }
 
