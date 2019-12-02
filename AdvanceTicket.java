@@ -11,13 +11,13 @@ public class AdvanceTicket extends TicketPrinter {
 	private int daysAhead;
 	public double ticketPrice;
 
-	  public AdvanceTicket(int number, int daysAhead) {
+	  public AdvanceTicket(int number, int daysAdvance) {
 	    super(ticketNumber);
-	    this.daysAhead = daysAhead;
+	    this.daysAdvance = daysAdvance;
 	  }
 
 	  public double getPrice() {
-	    if (daysAhead >= 10) {
+	    if (daysAdvance >= 10) {
 	      return 30.00;
 	    } else {
 	      return 40.00;
@@ -25,10 +25,10 @@ public class AdvanceTicket extends TicketPrinter {
 	  }
 
 	  public String toString() {
-	    if (daysAhead >= 10) {
-	      return super.toString() + " (" + this.daysAhead + " days ahead, you got a great deal!)";
+	    if (daysAdvance >= 10) {
+	      return super.toString() + " (" + this.daysAdvance + " days before the event");
 	    } else {
-	      return super.toString() + " (" + this.daysAhead + " days ahead, you could have saved a bit more)";
+	      return super.toString() + " (" + this.daysAhead + " days before the event");
 	    }
 	  }
 	}
